@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 9 - Calculator </title>
+  <link rel="stylesheet" type="text/css" href="calculator.css" title="style">
+  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
+  <script src="calculator.js"></script>
+</head>
+
+<body onload="buttons()" onkeydown="uniCharCode(event)">
+ <div class="body">
+ <!-- Heading-->
+  <header>
+    <h1> Calculator </h1>
+  </header>
+ <!-- Calculator region-->
+  <div class="calc">
+   <!-- Output-->
+    <input id="entry" type="text" readonly/>
+   <!-- Keys-->
+    <div class="grid-container">
+      <!-- Number Buttons-->
+        <div type="button" id="num0" class="item0 num" value="0">0</div>
+        <div type="button" id="num1" class="item1 num" value="1">1</div>
+        <div type="button" id="num2" class="item2 num" value="2">2</div>
+        <div type="button" id="num3" class="item3 num" value="3">3</div>
+        <div type="button" id="num4" class="item4 num" value="4">4</div>
+        <div type="button" id="num5" class="item5 num" value="5">5</div>
+        <div type="button" id="num6" class="item6 num" value="6">6</div>
+        <div type="button" id="num7" class="item7 num" value="7">7</div>
+        <div type="button" id="num8" class="item8 num" value="8">8</div>
+        <div type="button" id="num9" class="item9 num" value="9">9</div>
+      <!-- Operations-->
+        <div type="button" id="point" class="itempoint num" value=".">.</div>
+        <div type="button" id="divide" class="itemdivide operator" value="/">&divide;</div>
+        <div type="button" id="multiply" class="itemmultiply operator" value="*">&times;</div>
+        <div type="button" id="minus" class="itemminus operator" value="-">-</div>
+        <div type="button" id="add" class="itemsum operator" value="+">+</div>
+        <div type="button" id="equal" class="itemequal operator" value="="><br>=</div>
+        <div type="button" id="itemac" class="itemac" value="all-clear"><br>AC</div>
+    </div>
+  </div>
+ </div><br>
+<!-- Footer-->
+ <footer>&copyAuthor of this web page: Simranjeet Singh</footer>
+</body>
+</html>
